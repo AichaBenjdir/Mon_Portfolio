@@ -2,94 +2,239 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>Portfolio | Aïcha BENJDIR</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Portfolio | Aïcha BENJDIR</title>
+  <!-- Google Fonts: Rubik -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&amp;display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
 
+     
+
+    
 </head>
 
 <body>
-    <header>
-        <a href="/" class="logo"><i class="fa-solid fa-code"></i> Aïcha BENJDIR </a>
 
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#about"> À propos</a></li>
-                <li><a href="#work">Travaux Pratique</a>
+ <!--  header -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #0d0d94;" >
+    <img src="./images/Photo.png" alt="mon photo" style="width:50px; padding: 10px;" class="rounded-pill"> 
+    <div class="loader"></div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbarToggler10">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbarToggler10">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#header">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills"> Compétances </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#work">Projets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav sm-icons mr-0">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/a%C3%AFcha-benjdir-7930191a5/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/AichaBenjdir" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+    </div>
+</nav>
+  <!-- navbar  -->
 
-                </li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- navbar ends -->
-   
+  <main>
+    
 
 
+    <!-- header  -->
+    <div class="header-section" style="background-color: #0d0d94;"  id="header">
+      <div class="left-section">
+        
+        <img class=" rounded-circle" src="./images/Photo.png" alt="Header Image">
+      </div>
+      <div class="right-section">
+        
+        <div class="main-text">
+          <h1>
 
-    <section id="about" class="about">
-        <div class="class-about">
-            <div class="about-img">
+            Bonjour,<br>
+            Je suis Aïcha <Br>
+            BENJDIR
+          </h1>
+        </div>
+        <div class="dev"></div>
+        <div class="paragraph animatedcard">
+          <p>Plongez dans mon univers où la passion pour le code rencontre l'innovation, 
+            et explorez comment je transforme des idées créatives en solutions technologiques élégantes et efficaces.</p>
+        </div>
+        <div class="contact-button animatedcard">
+          <a href="#contact" class="contact-button" style="border-radius: 1em; padding: 9px;">
+            Contactez-moi
+          </a>
+          <a href="./images/CV_Aicha_Benjdir.pdf" download="CV_Aicha_Benjdir.pdf" class="download-button" style="border-radius: 1em; padding: 9px;">
+            Télécharger mon CV
+          </a>
+        </div>
+      </div>
+    </div>
 
-                <img src="./images/monPhoto.jpg" alt="" class="aimg-1">
+  </main>
 
-            </div>
-            <div class="about-text">
-                <div class=" about-text-block">
-                    
-                    <h2>Mon Parcours</h2>
+<!-- /header  -->
+
+ <!--Mes skillsétances -->
+ <section class="skills" id="skills">
+  <div class="container">
+      <h2 class="heading"><i class="fas fa-laptop-code"></i> Mes <span>Compétances</span></h2>
+      
+      <div class="row justify-content-center">
+          <div class="col-md-10">
+              <div class="row" id="skillsContainer">
+                  <div class="col-md-4 col-lg-3">
+                      <div class="bar">
+                          <div class="info">
+                              <img src="./images/skills/icons8-html-96.png" height="50" width="50" alt="HTML">
+                              <span>HTML</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                      <div class="bar">
+                          <div class="info">
+                              <img src="./images/skills/css.png" height="50" width="50" alt="CSS">
+                              <span>CSS</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                      <div class="bar">
+                          <div class="info">
+                              <img src="./images/skills/javascript.png" height="50" width="50" alt="JavaScript">
+                              <span>JavaScript</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                      <div class="bar">
+                          <div class="info">
+                              <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 48 48" fill="currentColor">
+                                  <linearGradient id="grad1" x1="18.208" x2="34.159" y1="2.413" y2="46.236" gradientUnits="userSpaceOnUse">
+                                      <stop offset="0" stop-color="#f09701"></stop>
+                                      <stop offset="1" stop-color="#e36001"></stop>
+                                  </linearGradient>
+                                  <path fill="url(#grad1)" d="M7.192,7.176l2.627,29.77c0.109,1.237,0.97,2.28,2.164,2.621l10.643,3.041 c0.898,0.257,1.849,0.257,2.747,0l10.643-3.041c1.194-0.341,2.055-1.383,2.164-2.621l2.627-29.77C40.911,6.006,39.99,5,38.816,5 H9.184C8.01,5,7.089,6.006,7.192,7.176z"></path>
+                                  <path fill="#f09601" d="M24,8v31.9l9.876-2.822c0.797-0.228,1.371-0.924,1.443-1.749l2.286-26.242 C37.656,8.502,37.196,8,36.609,8H24z"></path>
+                                  <path fill="#fff" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5L24,25z M32.9,17l0.3-4H24v4H32.9z"></path>
+                                  <path fill="#d6e0e9" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
+                                  <path d="M33.2,13l-0.3,4H24h-4.9l0.3,4H24h8.6l-0.7,11.5L24,35.1l-7.9-2.6L15.7,27h4l0.2,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-8.4 l-0.7-12H24H33.2 M34.278,12H33.2H24h-9.1h-1.06l0.062,1.058l0.7,12L14.657,26h-0.032l0.078,1.073l0.4,5.5l0.049,0.668 l0.636,0.209l7.9,2.6L24,36.153l0.313-0.103l7.9-2.6l0.644-0.212l0.041-0.677l0.7-11.5L33.663,20H32.6H24h-3.672l-0.15-2H24h8.9 h0.928l0.069-0.925l0.3-4L34.278,12L34.278,12z M20.623,26H24h3.331l-0.185,2.769L24,29.843l-3.156-1.077l-0.148-1.846L20.623,26 L20.623,26z" opacity=".05"></path>
+                                  <path d="M33.2,13l-0.3,4H24h-4.9l0.3,4H24h8.6l-0.7,11.5L24,35.1l-7.9-2.6L15.7,27h4l0.2,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-8.4 l-0.7-12H24H33.2 M33.739,12.5H33.2H24h-9.1h-0.53l0.031,0.529l0.7,12l0.027,0.471H15.6H24h3.866l-0.242,3.634L24,30.372 l-3.628-1.239l-0.174-2.173l-0.037-0.46H19.7h-4h-0.538l0.039,0.536l0.4,5.5l0.024,0.334l0.318,0.105l7.9,2.6L24,35.626 l0.156-0.051l7.9-2.6l0.322-0.106l0.021-0.339l0.7-11.5l0.032-0.53H32.6H24h-4.136l-0.225-3H24h8.9h0.464l0.035-0.463l0.3-4 L33.739,12.5L33.739,12.5z" opacity=".07"></path>
+                              </svg>
+                              <span>HTML5</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                      <div class="bar">
+                          <div class="info">
+                              <img src="./images/skills/bootstrap.png" height="50" width="50" alt="Bootstrap">
+                              <span>Bootstrap</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                    <div class="bar">
+                        <div class="info">
+                            <img src="./images/skills/git.png" height="50" width="50" alt="Git">
+                            <span>Git</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-block">
-
-                    <div class="about-box">
-                        <img src="./images/formation.jpg" class="aicon-1">
-                        <div class="box-text">
-                            <strong>Dévloppeuse Fullstack </strong>
-                            <p>Je suis en cours de formation avec 10000 Codeurs pour devenir Conceptrice Développeuse
-                                FullStack Web/Mobile.</p>
-                        </div>
-                    </div>
-                    <div class="about-box">
-                        <img src="./images/Ambassadeur.jpg" class="aicon-1">
-                        <div class="box-text">
-                            <strong>Ambassadrice 10000 Codeurs</strong>
-
-
-
-                        </div>
-                    </div>
-                    <div class="about-box">
-                        <img src="./images/isimg.jpg" class="aicon-1">
-                        <div class="box-text">
-                            <strong>Master de recherche en sciences de l'informatique et du multimédia </strong>
-                            <p>Isimg</p>
+                  <div class="col-md-4 col-lg-3">
+                      <div class="bar">
+                          <div class="info">
+                              <img src="./images/skills/github.png" height="50" width="50" alt="GitHub">
+                              <span>GitHub</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                      <div class="bar">
+                          <div class="info">
+                              <img src="./images/skills/sql.png" height="50" width="50" alt="SQL">
+                              <span>SQL</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                      <div class="bar">
+                          <div class="info">
+                              <img src="./images/skills/PHP.png" height="50" width="50" alt="PHP">
+                              <span>PHP</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                      <div class="bar">
+                          <div class="info">
+                              <img src="./images/skills/angular.png" height="50" width="50" alt="Angular">
+                              <span>Angular</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3">
+                    <div class="bar">
+                        <div class="info">
+                            <img src="./images/skills/canva.jpg" height="50" width="50" alt="Canva">
+                            <span>Canva</span>
                         </div>
                     </div>
                 </div>
-            </div>
-    </section>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!--/Mes skillsétances -->
 
 
-<!-- work project section starts -->
-<section class="work" id="work">
+  <!-- Projets Réalisés -->
+  <section class="work" id="work">
 
     <h2 class="heading"><i class="fas fa-laptop-code"></i> Mes Travaux <span>Pratique</span></h2>
-  
+
     <div class="box-container">
-  
+
       <div class="box tilt">
         <img draggable="false" src="./images/portfolio.PNG" alt="" />
         <div class="content">
           <div class="tag">
-          <h3>Portfolio Website</h3>
+            <h3>Portfolio Website</h3>
           </div>
           <div class="desc">
             <p>Mon portfolio </p>
             <div class="btns">
-              <a href="https://aichabenjdir.github.io/Portfolio-TP-10000Codeurs/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-              <a href="https://github.com/AichaBenjdir/Portfolio-TP-10000Codeurs" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              <a href="https://aichabenjdir.github.io/Portfolio-TP-10000Codeurs/" class="btn" target="_blank"><i
+                  class="fas fa-eye"></i> View</a>
+              <a href="https://github.com/AichaBenjdir/Portfolio-TP-10000Codeurs" class="btn" target="_blank">Code <i
+                  class="fas fa-code"></i></a>
             </div>
           </div>
         </div>
@@ -98,13 +243,15 @@
         <img draggable="false" src="./images/WordToCss.jpg" alt="" />
         <div class="content">
           <div class="tag">
-          <h3>TP word en HTML et CSS</h3>
+            <h3>TP word en HTML et CSS</h3>
           </div>
           <div class="desc">
             <p>10000 Codeurs</p>
             <div class="btns">
-              <a href="https://aichabenjdir.github.io/TP1-HTML-CSS/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-              <a href="https://github.com/AichaBenjdir/TP1-HTML-CSS" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              <a href="https://aichabenjdir.github.io/TP1-HTML-CSS/" class="btn" target="_blank"><i
+                  class="fas fa-eye"></i> View</a>
+              <a href="https://github.com/AichaBenjdir/TP1-HTML-CSS" class="btn" target="_blank">Code <i
+                  class="fas fa-code"></i></a>
             </div>
           </div>
         </div>
@@ -113,13 +260,15 @@
         <img draggable="false" src="./images/Tuto-css.PNG" alt="" />
         <div class="content">
           <div class="tag">
-          <h3>Tuto CSS</h3>
+            <h3>Tuto CSS</h3>
           </div>
           <div class="desc">
             <p>Les bases de CSS</p>
             <div class="btns">
-              <a href="https://aichabenjdir.github.io/Tuto1-CSS/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-              <a href="https://github.com/AichaBenjdir/Tuto1-CSS" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              <a href="https://aichabenjdir.github.io/Tuto1-CSS/" class="btn" target="_blank"><i class="fas fa-eye"></i>
+                View</a>
+              <a href="https://github.com/AichaBenjdir/Tuto1-CSS" class="btn" target="_blank">Code <i
+                  class="fas fa-code"></i></a>
             </div>
           </div>
         </div>
@@ -128,13 +277,15 @@
         <img draggable="false" src="./images/tutoJavascript.PNG" alt="" />
         <div class="content">
           <div class="tag">
-          <h3>Tuto Javascript </h3>
+            <h3>Tuto Javascript </h3>
           </div>
           <div class="desc">
             <p>Les bases de Javascript</p>
             <div class="btns">
-              <a href="https://aichabenjdir.github.io/Tuto-Javascript/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-              <a href="https://github.com/AichaBenjdir/Tuto-Javascript" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              <a href="https://aichabenjdir.github.io/Tuto-Javascript/" class="btn" target="_blank"><i
+                  class="fas fa-eye"></i> View</a>
+              <a href="https://github.com/AichaBenjdir/Tuto-Javascript" class="btn" target="_blank">Code <i
+                  class="fas fa-code"></i></a>
             </div>
           </div>
         </div>
@@ -143,13 +294,15 @@
         <img draggable="false" src="./images/todoList.PNG" alt="" />
         <div class="content">
           <div class="tag">
-          <h3>To-Do-List</h3>
+            <h3>To-Do-List</h3>
           </div>
           <div class="desc">
             <p>Projet To-Do-List avec HTML, CSS et JAVASCRIPT</p>
             <div class="btns">
-              <a href="https://aichabenjdir.github.io/To-Do-List/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-              <a href="https://github.com/AichaBenjdir/To-Do-List" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              <a href="https://aichabenjdir.github.io/To-Do-List/" class="btn" target="_blank"><i
+                  class="fas fa-eye"></i> View</a>
+              <a href="https://github.com/AichaBenjdir/To-Do-List" class="btn" target="_blank">Code <i
+                  class="fas fa-code"></i></a>
             </div>
           </div>
         </div>
@@ -158,69 +311,114 @@
         <img draggable="false" src="./images/Bootstrap.PNG" alt="" />
         <div class="content">
           <div class="tag">
-          <h3>  Bootstrap</h3>
+            <h3> Bootstrap</h3>
           </div>
           <div class="desc">
             <p>J'ai mis à jour le projet TP1, passé de HTML et CSS à une version optimisée avec Bootstrap.</p>
             <div class="btns">
-              <a href="https://aichabenjdir.github.io/TP1-Bootstrap/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-              <a href="https://github.com/AichaBenjdir/TP1-Bootstrap" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              <a href="https://aichabenjdir.github.io/TP1-Bootstrap/" class="btn" target="_blank"><i
+                  class="fas fa-eye"></i> View</a>
+              <a href="https://github.com/AichaBenjdir/TP1-Bootstrap" class="btn" target="_blank">Code <i
+                  class="fas fa-code"></i></a>
             </div>
           </div>
         </div>
       </div>
-      </div>
-  
-  </div>
-  
+    </div>
+
+    </div>
+
   </section>
-  <!-- work project section ends -->
 
 
+  <!-- /Projets Réalisés -->
 
 
+  <!-- contact -->
 
-    <!-- footer section starts -->
-    <section id="contact" class="footer">
-
-        <div class="box-container">
-
-            <div class="box">
-                <h3>Portfolio Aïcha </h3>
-                <p>Merci de visiter mon site web personnel. Revenez souvent pour découvrir de nouvelles mises à jour et projets!
-                    </p>
-            </div>
-
-            <div class="box">
-                <h3>Liens</h3>
-                <a href="#about"><i class="fas fa-chevron-circle-right"></i> À propos</a>
-                <a href="#work"><i class="fas fa-chevron-circle-right"></i> Travaux Pratique</a>
-                <a href="#contact"><i class="fas fa-chevron-circle-right"></i> Contact</a>
-            
-
-            </div>
-
-            <div class="box">
-                <h3>Contact</h3>
-                <p> <i class="fas fa-phone"></i>+216 99137641</p>
-                <p> <i class="fas fa-envelope"></i>aicha.benjdir@isimg.tn</p>
-                <p> <i class="fas fa-map-marked-alt"></i>Tunisie</p>
-                <div class="share">
-                    <a href="https://www.linkedin.com/in/a%C3%AFcha-benjdir-7930191a5/" class="fab fa-linkedin" aria-label="LinkedIn"
-                        target="_blank"></a>
-                    <a href="https://github.com/AichaBenjdir" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-                    
-
-                </div>
-            </div>
+  <section class="contact section" id="contact">
+    <h2 class="section_title">Contactez <span>Moi</span></h2>
+    <p class="section_subtitle">N'hésitez pas à me contacter pour toute question ou projet. 
+      Je répondrai avec plaisir dans les plus brefs délais !</p>
+    
+    <div class="contact_container container grid">
+      <div class="contact_details">
+        <div class="contact_information">
+          <i class="fas fa-phone-alt contact_icon"></i>
+          <div>
+            <h3 class="contact_title">Phone</h3>
+            <span class="contact_info">+216 99137641</span>
+          </div>
         </div>
+        
+        <div class="contact_information">
+           <i class="fas fa-envelope contact_icon"></i>
+          
+          <div>
+            <h3 class="contact_title icon ">Email</h3>
+            <span class="contact_info">aicha.benjdir@isimg.tn</span>
+          </div>
+        </div>
+        
+        <div class="contact_information">
+          <i class="fas fa-map-marker-alt contact_icon"></i>
+          <div>
+            <h3 class="contact_title">Addresse</h3>
+            <span class="contact_info">Tunisie - Kébili</span>
+          </div>
+        </div>
+      </div>
+      
+      <form method="POST" id="contactForm" name="contactForm">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+             
+              <input type="text" class="form-control " name="nom" id="nom" placeholder="Nom"  >
+             
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" class="form-control" name="sujet" id="sujet" placeholder="Entrez le sujet de votre message ....">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Écrivez votre message ici"></textarea>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="submit" value="Envoyer le message" class="btn">
+              <div class="submitting"></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
 
-        <h1 class="credit">Conçu avec ❤️ <i class="fa fa-heart pulse"></i> par <a
-                href="https://www.linkedin.com/in/a%C3%AFcha-benjdir-7930191a5/"> Aïcha BENJDIR</a></h1>
+<!-- /contact -->
 
-    </section>
-    <!-- footer section ends -->
+  <!-- footer  -->
+  <section id="contact" class="footer">
 
+      <h1 class="credit">Conçu avec <i class="fa fa-heart pulse"></i> par <a
+          href="https://www.linkedin.com/in/a%C3%AFcha-benjdir-7930191a5/"> Aïcha BENJDIR</a></h1>
+
+  </section>
+  <!-- footer  -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+  <script src="./JS/script.js"></script>
 </body>
 
 </html>
