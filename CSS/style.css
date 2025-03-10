@@ -229,6 +229,84 @@ margin-right: 30px;
 }
 
 
+/* Section Certifications */
+.certifications {
+  background-color: #f9f9ff; 
+  color: rgb(70, 7, 187);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Titre principal */
+.certifications .heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icône */
+.certifications .heading i {
+  color: #f0860d; 
+  font-size: 2.2rem;
+}
+
+/* Liste des certifications */
+.certification-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Cartes de certifications */
+.certification {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.certification:hover {
+  transform: translateY(-5px);
+}
+
+/* Image de certification */
+.certification img {
+  width: 100%;  /* L’image prend toute la largeur */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Titres des certifications */
+.certification h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #f0860d; 
+}
+
+/* Texte des certifications */
+.certification p {
+  font-size: 1rem;
+  color: rgb(70, 7, 187);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certification-list {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
 /* projets */
 
 
