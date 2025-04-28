@@ -1,3 +1,37 @@
+
+
+// Récupérer tous les boutons de filtre
+const filterButtons = document.querySelectorAll('#filters .btn');
+// Récupérer tous les projets
+const projectCards = document.querySelectorAll('.projects-container .project-card');
+
+// Ajouter l'événement à chaque bouton
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Supprimer la classe active de tous les boutons
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    // Ajouter la classe active au bouton cliqué
+    button.classList.add('active');
+
+    const filterValue = button.getAttribute('data-filter').toLowerCase();
+
+    // Afficher/masquer les projets selon le filtre
+    projectCards.forEach(card => {
+      const classes = card.classList;
+      if (filterValue === 'all' || classes.contains(filterValue)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contactForm');
     const submitButton = form.querySelector('input[type="submit"]');
